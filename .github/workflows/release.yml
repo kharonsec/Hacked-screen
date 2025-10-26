@@ -71,7 +71,7 @@ jobs:
           fi
 
       - name: Upload Linux artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: HACKED-linux-x64
           path: |
@@ -112,7 +112,7 @@ jobs:
           hdiutil create -volname "HACKED" -srcfolder HACKED.app -ov -format UDZO HACKED-macos-x64.dmg
 
       - name: Upload macOS artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: HACKED-macos-x64
           path: |
@@ -240,7 +240,7 @@ jobs:
           }
 
       - name: Upload Windows artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: HACKED-windows-x64
           path: |
