@@ -37,7 +37,7 @@ jobs:
           tar -czf HACKED-linux-x64.tar.gz HACKED
 
       - name: Upload Linux artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: HACKED-linux-x64
           path: build/HACKED-linux-x64.tar.gz
@@ -65,7 +65,7 @@ jobs:
           tar -czf HACKED-macos-x64.tar.gz HACKED.app
 
       - name: Upload macOS artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: HACKED-macos-x64
           path: build/HACKED-macos-x64.tar.gz
@@ -96,7 +96,7 @@ jobs:
           tar -czf HACKED-windows-x64.tar.gz HACKED.exe
 
       - name: Upload Windows artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: HACKED-windows-x64
           path: build/Release/HACKED-windows-x64.tar.gz
